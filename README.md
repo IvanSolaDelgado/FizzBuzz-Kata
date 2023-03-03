@@ -1,8 +1,8 @@
-# PHP 8 Base testing repo
-## Includes a workflow for unit tests and grum with PHPmd and PHPcs
-### How to use it
-- Clone repo
-- composer install
-- Configure PHPUnit
-- Change the git pointer to point to your personal repo
-- Use it!
+# FizzBuzz Kata
+## Your task
+
+- Write a program that returns a number that we have entered
+- Usually just print the number itself
+- For multiples of three print Fizz instead of the number
+- For the multiples of five print Buzz instead of the number
+- For numbers which are multiples of both three and five print FizzBuzz instead of the number

@@ -19,7 +19,20 @@ final class FizzBuzzTest extends TestCase
 
         $result = $fizzbuzz->tryFizzBuzz(9);
 
-        $this->assertEquals("fizz",$result);
+        $this->assertEquals("fizz", $result);
+    }
+
+    /**
+     * @test
+     */
+
+    public function shouldSaysBuzzWhenNumberMultipleOfFive()
+    {
+        $fizzbuzz = new FizzBuzz();
+
+        $result = $fizzbuzz->tryFizzBuzz(10);
+
+        $this->assertEquals("buzz", $result);
     }
 
 }
