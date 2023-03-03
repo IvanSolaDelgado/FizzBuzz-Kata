@@ -19,7 +19,7 @@ final class FizzBuzzTest extends TestCase
 
         $result = $fizzbuzz->tryFizzBuzz(9);
 
-        $this->assertEquals("fizz", $result);
+        $this->assertEquals("Fizz", $result);
     }
 
     /**
@@ -32,7 +32,20 @@ final class FizzBuzzTest extends TestCase
 
         $result = $fizzbuzz->tryFizzBuzz(10);
 
-        $this->assertEquals("buzz", $result);
+        $this->assertEquals("Buzz", $result);
+    }
+
+    /**
+     * @test
+     */
+
+    public function shouldSaysFizzBuzzWhenNumberMultipleOfThreeAndFive()
+    {
+        $fizzbuzz = new FizzBuzz();
+
+        $result = $fizzbuzz->tryFizzBuzz(15);
+
+        $this->assertEquals("FizzBuzz", $result);
     }
 
 }

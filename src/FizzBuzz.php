@@ -6,11 +6,12 @@ class FizzBuzz
 {
     public function tryFizzBuzz(int $numberToConvert): int|string
     {
-        if ($numberToConvert % 3 === 0) {
-            return "fizz";
+        if($numberToConvert % 15 === 0){
+            return "FizzBuzz";
         }
-        else{
-            return "buzz";
+        else if ($numberToConvert % 3 === 0) {
+            return "Fizz";
         }
+        return "Buzz";
     }
 }
