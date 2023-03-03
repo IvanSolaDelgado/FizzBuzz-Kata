@@ -48,4 +48,17 @@ final class FizzBuzzTest extends TestCase
         $this->assertEquals("FizzBuzz", $result);
     }
 
+    /**
+     * @test
+     */
+
+    public function shouldSaysTheNumberWhenNumberNotMultipleOfThreeOfFive()
+    {
+        $fizzbuzz = new FizzBuzz();
+
+        $result = $fizzbuzz->tryFizzBuzz(16);
+
+        $this->assertEquals(16, $result);
+    }
+
 }
